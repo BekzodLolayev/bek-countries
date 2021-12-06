@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,43 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
-<body>
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ducimus facilis ipsa earum ipsum obcaecati cum tempore, soluta nulla nam perferendis unde fugiat dolorum distinctio nemo commodi voluptatum ex aliquam!
+<body>
+  <div class="container">
+    <!-- Site header -->
+    <header class="site-header-container">
+      <h1 class="site-logo">Where in the world?</h1>
+      <div class="header-dark-mode">
+
+        <span class="far fa-moon">Dark mode</span>
+
+      </div>
+    </header>
+    <!-- search form -->
+    <section class="form-search">
+      <form class="global-search-form" action="https://echo.htmlacademy.ru" method="GET">
+        <input class="global-search-form-input" type="search" name="search" placeholder="Search for a country…"
+          aria-label="Поиск" required>
+      </form>
+      <!-- Dropdown list -->
+      <div class="dropdown">
+        <button>Filter by Region</button>
+        <div class="dropdown-content">
+          <a href="#">Africa</a>
+          <a href="#">America</a>
+          <a href="#">Asia</a>
+          <a href="#">Europe</a>
+          <a href="#">Oceania</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

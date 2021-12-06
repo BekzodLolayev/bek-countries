@@ -3,6 +3,7 @@
   --body-bg: #fafafa;
   --element-bg: #fff;
   --text-color: #111517;
+  --box-shadov: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 
 
@@ -91,7 +92,7 @@ a {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1480px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -99,7 +100,102 @@ a {
 }
 
 
+/* SITE HEADER */
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 80px 24px 81px;
+  box-shadow: var(--box-shadov);
+}
+.site-logo {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #111517;
+}
+.header-dark-mode {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.fa-moon:before {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+/* SEARCH FORM */
+.form-search {
+  width: 1440px;
+  height: 944px;
+  padding: 48px 80px 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.global-search-form-input {
+  width: 480px;
+  height: 56px;
+  padding-left: 74px;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 34px center;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown button{
+  width: 200px;
+  height: 56px;
+  padding: 0;
+  margin-bottom: 4px;
+  background: var(--element-bg);
+  box-shadow: var(--box-shadov);
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding-left: 24px;
+  background-image: url(../img/button-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 164px center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background: var(--element-bg);
+  box-shadow: var(--box-shadov);
+  border-radius: 5px;
+  padding: 16px 24px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+.dropdown-content a:not(:last-child) {
+  margin-bottom: 8px;
+}
+.dropdown-content a:hover {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+

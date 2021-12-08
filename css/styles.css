@@ -116,11 +116,16 @@ a {
   font-size: 24px;
   line-height: 33px;
   color: #111517;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 .header-dark-mode {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  border: none;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 .fa-moon:before {
   font-size: 12px;
@@ -139,14 +144,14 @@ a {
   height: 56px;
   padding-left: 74px;
   background-image: url(../img/icon-search.svg);
+  background-color: var(--element-bg);
+  color: var(--text-color);
   background-repeat: no-repeat;
   background-position: 34px center;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border: none;
   border-radius: 5px;
 }
-
-
 
 .dropdown {
   display: inline-block;
@@ -157,7 +162,8 @@ a {
   height: 56px;
   padding: 0;
   margin-bottom: 4px;
-  background: var(--element-bg);
+  background-color: var(--element-bg);
+  color: var(--text-color);
   box-shadow: var(--box-shadov);
   border-radius: 5px;
   border: none;

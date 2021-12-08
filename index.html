@@ -14,22 +14,20 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="dark-mode">
   <div class="container">
     <!-- Site header -->
     <header class="site-header-container">
-      <h1 class="site-logo">Where in the world?</h1>
-      <div class="header-dark-mode">
-
+      <a class="site-logo" href="index.html">Where in the world?</a>
+      <button class="header-dark-mode">
         <span class="far fa-moon">Dark mode</span>
-
-      </div>
+      </button>
     </header>
     <!-- search form -->
     <section class="form-search">
       <form class="global-search-form" action="https://echo.htmlacademy.ru" method="GET">
         <input class="global-search-form-input" type="search" name="search" placeholder="Search for a country…"
-          aria-label="Поиск" required>
+          aria-label="Search for a country…" required>
       </form>
       <!-- Dropdown list -->
       <div class="dropdown">

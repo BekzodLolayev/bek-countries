@@ -1,5 +1,5 @@
-const elSiteThemeToggler = document.querySelector('.header-dark-mode');
+var elSiteDarkMode = document.querySelector('.header-dark-mode');
 
-elSiteThemeToggler.addEventListener('click', function () {
+elSiteDarkMode.addEventListener('click', function () {
   document.body.classList.toggle('dark-mode');
 });

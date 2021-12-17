@@ -134,7 +134,6 @@ a {
 
 /* SEARCH FORM */
 .form-search {
-  width: 1440px;
   padding: 48px 80px 45px;
   display: flex;
   justify-content: space-between;
